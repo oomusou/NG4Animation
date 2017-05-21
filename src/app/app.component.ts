@@ -18,4 +18,8 @@ import { trigger, state, style } from '@angular/animations';
 })
 export class AppComponent {
   signal = 'stop';
+
+  onGoClick() {
+    this.signal = 'go';
+  }
 }
