@@ -1,20 +1,11 @@
 import { Component } from '@angular/core';
-import { trigger, state, style } from '@angular/animations';
+import { animations } from './app.animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [
-    trigger('signal', [
-      state('go', style({
-        'background-color': 'green'
-      })),
-      state('stop', style({
-        'background-color': 'red'
-      }))
-    ])
-  ]
+  animations: animations
 })
 export class AppComponent {
   signal = 'stop';
