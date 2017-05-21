@@ -9,6 +9,9 @@ import { trigger, state, style } from '@angular/animations';
     trigger('signal', [
       state('go', style({
         'background-color': 'green'
+      })),
+      state('stop', style({
+        'background-color': 'red'
       }))
     ])
   ]
