@@ -9,6 +9,7 @@ import { animations } from './app.animation';
 })
 export class AppComponent {
   signal;
+  isShow = false;
 
   onGoClick() {
     this.signal = 'go';
@@ -16,5 +17,9 @@ export class AppComponent {
 
   onStopClick() {
     this.signal = 'stop';
+  }
+
+  onToggleClick() {
+    this.isShow = !this.isShow;
   }
 }
