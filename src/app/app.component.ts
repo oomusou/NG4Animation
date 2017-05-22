@@ -13,4 +13,8 @@ export class AppComponent {
   onGoClick() {
     this.signal = 'go';
   }
+
+  onStopClick() {
+    this.signal = 'stop';
+  }
 }
