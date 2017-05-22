@@ -1,4 +1,4 @@
-import { state, style, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 
 export const animations = [
   trigger('signal', [
@@ -7,6 +7,7 @@ export const animations = [
     })),
     state('stop', style({
       'background-color': 'red'
-    }))
+    })),
+    transition('* => *', animate(1000))
   ])
 ];
