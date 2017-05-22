@@ -8,6 +8,7 @@ export const animations = [
     state('stop', style({
       'background-color': 'red'
     })),
+    transition('void => *', animate(0)),
     transition('* => *', animate(1000))
   ])
 ];
