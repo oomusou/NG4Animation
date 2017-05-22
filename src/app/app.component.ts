@@ -8,7 +8,7 @@ import { animations } from './app.animation';
   animations: animations
 })
 export class AppComponent {
-  signal = 'stop';
+  signal;
 
   onGoClick() {
     this.signal = 'go';
