@@ -11,6 +11,6 @@ export const animations = [
     state('stop', style({
       'background-color': 'red'
     })),
-    transition('* => *', animate('5s 1s ease'))
+    transition('* => *', animate('5s 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)'))
   ])
 ];
