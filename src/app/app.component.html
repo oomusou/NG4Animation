@@ -1,5 +1,5 @@
-<div class="traffic-light" [@signal]="signal" *ngIf="isShow"></div>
-<button (click)="onGoClick()">Go</button>
-<button (click)="onStopClick()">Stop</button>
+<div class="traffic-light" [@signal]="signal" *ngIf="isShow" (@signal.done)="signalDone()"></div>
+<button (click)="onGoClick()" [disabled]="!isEnabled">Go</button>
+<button (click)="onStopClick()" [disabled]="!isEnabled">Stop</button>
 <hr>
-<button (click)="onToggleClick()">Toggle</button>
+<button (click)="onToggleClick()" [disabled]="!isEnabled">Toggle</button>

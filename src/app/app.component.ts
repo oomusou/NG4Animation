@@ -10,16 +10,24 @@ import { animations } from './app.animation';
 export class AppComponent {
   signal;
   isShow = false;
+  isEnabled = true;
 
   onGoClick() {
     this.signal = 'go';
+    this.isEnabled = false;
   }
 
   onStopClick() {
     this.signal = 'stop';
+    this.isEnabled = false;
   }
 
   onToggleClick() {
     this.isShow = !this.isShow;
+    this.isEnabled = false;
+  }
+
+  signalDone() {
+    this.isEnabled = true;
   }
 }
