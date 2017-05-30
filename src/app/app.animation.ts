@@ -11,7 +11,7 @@ export const animations = [
     state('stop', style({
       'background-color': 'red'
     })),
-    transition('void => *', animate(5000, keyframes([
+    transition('void <=> *', animate(5000, keyframes([
       style({'transform': 'scale(0)'}),
       style({'transform': 'scale(.1)'}),
       style({'transform': 'scale(.5)'}),
